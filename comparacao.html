@@ -1,0 +1,49 @@
+<! DOCTYPE html>
+
+<html lang="pt-br">
+ <head>
+  <title></title>
+  <meta charset="UTF-8">
+   <style>
+     * {margin:0; padding:0; list-style:none; vertical-align:baseline;}
+     body{font-family:arial, helvetica, sans-serif; background:#ccc; color:#333;}
+     strong{color:#333;}
+	 h1, h2, h3, h4, h5, h6, p {margin:2px; padding:1px;}
+   </style>
+ </head>
+ <body>
+  <h1>Operaçao de comparação:</h1>
+  <p>Operadores de comparação se destinam a realizar operação de comparação entre dois operadores. Os seguintes operadores pertencem ao grupamento das operações de comparação.</p>
+ 
+ </body>
+ 
+ <script type="text/javascript">
+ document.write("<h1>" + "Igualdade" + "</h1>");
+ 
+ funcaoUm = function(){
+  
+  var x = 43;
+  document.write("<p>" + "X é igual a 43:" + "<strong>" + "x === 43" + "</strong></p>");
+  document.write(x==43);
+  document.write("<p>" + "X é igual a 43:" + "<strong>" + "x === \"43\"" + "</strong></p>");
+  document.write(x=="43");
+  document.write("<p>" + "X é igual a 43:" + "<strong>" + "x === 67" + "</strong></p>");
+  document.write(x=="67");
+  
+ }
+ funcaoUm()
+ 
+ document.write("<h1>" + "Identidade" + "</h1>");
+ 
+ funcaoDois = function() {
+ var x = 43;
+ document.write("<p>" + "x === 43:" + "</p>");
+ document.write(x===43);
+ document.write("<p>" + "x === \"43\":" + "</p>");
+ document.write(x==="43");
+ document.write("<p>" + "67 === \"67\":"+ "</p>");
+ document.write(67 === "67");
+ }
+ funcaoDois()
+ </script>
+ 
